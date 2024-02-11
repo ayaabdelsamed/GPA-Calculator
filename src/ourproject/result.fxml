@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ourproject.RecommendationController">
+   <children>
+      <ImageView fitHeight="762.0" fitWidth="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="71.0" layoutY="74.0" prefHeight="587.0" prefWidth="389.0" spacing="10.0" style="-fx-background-color: rgb(166, 242, 185); -fx-background-radius: 30;">
+         <children>
+            <Label prefHeight="31.0" prefWidth="183.0" text="Semester GPA">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtsem" maxWidth="-Infinity" prefHeight="47.0" prefWidth="123.0" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <Label text="Cumulative GPA">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcom" maxWidth="-Infinity" prefHeight="50.0" prefWidth="122.0" style="-fx-background-color: beige; -fx-background-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </TextField>
+            <VBox prefHeight="168.0" prefWidth="375.0">
+               <children>
+                  <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations! you got GPA greater than 2 and pass" textAlignment="CENTER" wrappingWidth="374.0908203125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="37.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="40.0" left="10.0" right="10.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ourproject.RecommendationController">
+   <children>
+      <ImageView fitHeight="762.0" fitWidth="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="81.0" layoutY="84.0" prefHeight="587.0" prefWidth="389.0" spacing="10.0" style="-fx-background-color: rgb(166, 242, 185); -fx-background-radius: 30;">
+         <children>
+            <VBox prefHeight="82.0" prefWidth="375.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unfortunately! you got GPA less than 2 so you can choose maximum 2 courses to improve your GPA" wrappingWidth="374.0908203125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <SplitMenuButton alignment="CENTER" mnemonicParsing="false" text="Available courses">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Fandamentals of Economics" />
+                  <MenuItem mnemonicParsing="false" text="Professsional Etics" />
+                  <MenuItem mnemonicParsing="false" text="Communication&amp; Negotiation skills" />
+                  <MenuItem mnemonicParsing="false" text="Ennovation and Entrepreneurship" />
+                  <MenuItem mnemonicParsing="false" text="Creative thinking and problem solving" />
+               </items>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </SplitMenuButton>
+            <ListView prefHeight="245.0" prefWidth="375.0" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+         </children>
+         <padding>
+            <Insets bottom="40.0" left="10.0" right="10.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

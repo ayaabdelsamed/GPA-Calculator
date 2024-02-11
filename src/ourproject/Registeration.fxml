@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="826.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ourproject.RegisterationController">
+   <children>
+      <ImageView fitHeight="875.0" fitWidth="696.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="77.0" layoutY="86.0" maxWidth="-Infinity" prefHeight="700.0" prefWidth="467.0" spacing="10.0" style="-fx-background-color: rgb(166, 242, 185); -fx-background-radius: 30;">
+         <children>
+            <HBox prefHeight="166.0" prefWidth="461.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="136.0" prefWidth="447.0" text="Register">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="80.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="Name:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtname" maxWidth="-Infinity" prefHeight="31.0" prefWidth="369.0" promptText="Enter first name and last name" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <Label text="ID:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtid" maxWidth="-Infinity" prefHeight="31.0" prefWidth="254.0" promptText="Enter ID" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <Label text="Password:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtpassword" maxWidth="-Infinity" prefHeight="31.0" prefWidth="249.0" promptText="Enter password" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <Label text="Confirm password:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtconfirm" maxWidth="-Infinity" prefHeight="31.0" prefWidth="245.0" promptText="Confirm password" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <Label text="Academic email:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtemail" maxWidth="-Infinity" prefHeight="31.0" prefWidth="363.0" promptText="Enter academic email" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnregister" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: beige; -fx-background-radius: 30; -fx-cursor: hand;" text="Register">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnhomee" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="49.0" prefWidth="146.0" style="-fx-background-color: beige; -fx-background-radius: 30; -fx-cursor: hand;" text="Home">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

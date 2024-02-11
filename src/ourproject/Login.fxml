@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ourproject.LoginController">
+   <children>
+      <ImageView fitHeight="807.0" fitWidth="588.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="92.0" layoutY="97.0" prefHeight="612.0" prefWidth="388.0" style="-fx-background-color: rgb(166, 242, 185); -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="172.0" prefWidth="388.0" text="Login">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="75.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="146.0" prefWidth="388.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="41.0" text="ID: ">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtid" maxWidth="-Infinity" onAction="#loginAdmin" prefHeight="43.0" prefWidth="263.0" promptText="Enter ID" style="-fx-background-color: beige; -fx-background-radius: 20;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="186.0" prefWidth="388.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" text="Password: ">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="366.0" spacing="10.0">
+                     <children>
+                        <PasswordField fx:id="txtpass" maxWidth="-Infinity" onAction="#loginAdmin" prefHeight="41.0" prefWidth="310.0" promptText="Enter password" style="-fx-background-color: beige; -fx-background-radius: 20;">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                           </padding>
+                        </PasswordField>
+                        <!--><ImageView fx:id="imgshow" fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../images/view.png" />
+                           </image></ImageView><!-->
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnlog" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: beige; -fx-background-radius: 30; -fx-cursor: hand;" text="Login">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnhome" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: beige; -fx-background-radius: 30; -fx-cursor: hand;" text="Home">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
